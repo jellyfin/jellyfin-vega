@@ -1,0 +1,46 @@
+{
+	"dir": "ltr",
+	"resources": {
+		"appName": {
+			"value": "Jellyfin",
+			"translate": false
+		},
+		"connectTitle": {
+			"value": "Connect to server"
+		},
+		"connectDescription": {
+			"value": "Enter the address of your Jellyfin server."
+		},
+		"serverAddress": {
+			"value": "Server address"
+		},
+		"serverAddressExample": {
+			"value": "http://192.168.1.100:8096",
+			"translate": false
+		},
+		"serverAddressHint": {
+			"value": "Include the port or path if your server uses one."
+		},
+		"connect": {
+			"value": "Connect"
+		},
+		"cancel": {
+			"value": "Cancel"
+		},
+		"rememberServer": {
+			"value": "Your server will be remembered on this device."
+		},
+		"serverConnectionFailed": {
+			"value": "Unable to connect. Check the address and make sure your Jellyfin server is running."
+		},
+		"serverUnreachable": {
+			"value": "Unable to reach your server. Check your connection and try again."
+		},
+		"serverSaveFailed": {
+			"value": "Unable to save the server address. Please try again."
+		},
+		"serverAddressRequired": {
+			"value": "Enter your Jellyfin server address to continue."
+		}
+	}
+}

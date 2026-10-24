@@ -1,0 +1,46 @@
+{
+	"dir": "ltr",
+	"resources": {
+		"appName": {
+			"value": "Jellyfin",
+			"translate": false
+		},
+		"connectTitle": {
+			"value": "Verbinding maken met server"
+		},
+		"connectDescription": {
+			"value": "Voer het adres van je Jellyfin-server in."
+		},
+		"serverAddress": {
+			"value": "Serveradres"
+		},
+		"serverAddressExample": {
+			"value": "http://192.168.1.100:8096",
+			"translate": false
+		},
+		"serverAddressHint": {
+			"value": "Vermeld ook de poort of het pad als je server die gebruikt."
+		},
+		"connect": {
+			"value": "Verbinden"
+		},
+		"cancel": {
+			"value": "Annuleren"
+		},
+		"rememberServer": {
+			"value": "Je server wordt op dit apparaat onthouden."
+		},
+		"serverConnectionFailed": {
+			"value": "Kan geen verbinding maken. Controleer het adres en zorg dat je Jellyfin-server actief is."
+		},
+		"serverUnreachable": {
+			"value": "Kan je server niet bereiken. Controleer je verbinding en probeer het opnieuw."
+		},
+		"serverSaveFailed": {
+			"value": "Kan het serveradres niet opslaan. Probeer het opnieuw."
+		},
+		"serverAddressRequired": {
+			"value": "Voer het adres van je Jellyfin-server in om door te gaan."
+		}
+	}
+}

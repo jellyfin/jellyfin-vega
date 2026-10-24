@@ -1,0 +1,62 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Vega packages
+    runs-on: ubuntu-latest
+    env:
+      CI: 'true'
+      NONINTERACTIVE: 'true'
+      SKIP_VVD_INSTALL: 'true'
+      VEGA_SDK_VERSION: '0.24.12112'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      # https://developer.amazon.com/docs/vega/0.24/continuous-integration.html
+      - name: Install Vega SDK
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y jq lz4
+          curl --fail --silent --show-error --location \
+            https://sdk-installer.vega.labcollab.net/get_vvm.sh \
+            --output "$RUNNER_TEMP/install-vega.sh"
+          bash "$RUNNER_TEMP/install-vega.sh"
+          source "$HOME/vega/env"
+          vega --version
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check TypeScript
+        run: npx tsc --noEmit
+
+      - name: Build release packages
+        shell: bash
+        run: |
+          source "$HOME/vega/env"
+          npm run build:release
+
+      - name: Upload CI artifacts
+        uses: actions/upload-artifact@v5
+        with:
+          name: jellyfin_vega
+          path: build/**/*.vpkg
+          if-no-files-found: error

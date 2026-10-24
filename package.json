@@ -1,0 +1,61 @@
+{
+	"name": "@jellyfin/vega",
+	"version": "0.0.1",
+	"private": true,
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "npm-run-all build:release",
+		"build:app": "npm-run-all build:release",
+		"build:debug": "react-native build-vega --build-type Debug",
+		"build:release": "react-native build-vega --build-type Release",
+		"clean": "rm -rf node_modules buildinfo.json dist build",
+		"lint": "eslint src test --ext .ts,.tsx",
+		"lint:fix": "eslint src test --ext .ts,.tsx --fix",
+		"release": "npm-run-all lint test build:app",
+		"start": "react-native start"
+	},
+	"overrides": {
+		"react": "19.2.0",
+		"react-native": "0.83.0"
+	},
+	"dependencies": {
+		"@amazon-devices/asset-resolver-lib": "~1.0",
+		"@amazon-devices/react-native-async-storage__async-storage": "~2.1.0",
+		"@amazon-devices/react-native-kepler": "~4.0.0+rn0.83.0",
+		"@amazon-devices/webview": "~4.0",
+		"@jellyfin/sdk": "^0.13.0",
+		"react": "19.2.0",
+		"react-native": "0.83.0",
+		"whatwg-url-without-unicode": "^8.0.0-3"
+	},
+	"devDependencies": {
+		"@amazon-devices/eslint-plugin-kepler": "^0.1.4",
+		"@amazon-devices/kepler-cli-platform": "^0",
+		"@react-native-community/cli": "20.0.0",
+		"@react-native/babel-preset": "0.83.0",
+		"@react-native/eslint-config": "0.83.0",
+		"@react-native/metro-config": "0.83.0",
+		"@testing-library/react-native": "^13.0.0",
+		"@types/react": "^19.2.0",
+		"@types/react-test-renderer": "^19.1.0",
+		"@typescript-eslint/eslint-plugin": "^6.5.0",
+		"eslint": "^8.57.1",
+		"jsonc-eslint-parser": "^2.4.0",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.8.8",
+		"react-test-renderer": "19.2.0",
+		"typescript": "5.8.3"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"kepler": {
+		"projectType": "application",
+		"appName": "Jellyfin",
+		"targets": [
+			"tv"
+		]
+	}
+}
