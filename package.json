@@ -37,7 +37,7 @@
 		"@amazon-devices/kepler-cli-platform": "0.22.14",
 		"@eslint/js": "9.39.5",
 		"@react-native-community/cli": "20.0.0",
-		"@react-native/babel-preset": "0.83.0",
+		"@react-native/babel-preset": "0.88.0",
 		"@react-native/eslint-config": "0.88.0",
 		"@react-native/metro-config": "0.83.0",
 		"@testing-library/react-native": "13.3.3",
