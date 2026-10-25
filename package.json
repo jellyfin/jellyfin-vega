@@ -50,7 +50,7 @@
 		"npm-run-all2": "9.0.3",
 		"prettier": "3.9.10",
 		"react-test-renderer": "19.2.0",
-		"typescript": "5.8.3"
+		"typescript": "5.9.3"
 	},
 	"engines": {
 		"node": ">=20"
