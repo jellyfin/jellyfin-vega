@@ -1,6 +1,6 @@
 {
 	"plugins": ["@typescript-eslint"],
-	"extends": ["@react-native", "eslint:recommended"],
+	"extends": ["eslint:recommended", "@react-native"],
 	"overrides": [
 		{
 			"files": ["**/*.ts", "**/*.tsx"],

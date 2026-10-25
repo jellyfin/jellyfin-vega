@@ -53,6 +53,15 @@ npm start
 
 Starts the React Native Metro server for development. Keep it running while using a debug build.
 
+### Lint and formatting
+
+```sh
+npm run lint
+npm run format
+```
+
+Runs ESLint and checks Prettier formatting. Use `npm run lint:fix` and `npm run format:fix` to apply automatic fixes locally.
+
 ### Install and run
 
 ```sh
