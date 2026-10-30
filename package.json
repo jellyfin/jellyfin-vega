@@ -42,7 +42,7 @@
 		"@react-native/metro-config": "0.83.0",
 		"@testing-library/react-native": "13.3.3",
 		"@types/react": "^19.2.0",
-		"@types/react-test-renderer": "19.1.0",
+		"@types/react-test-renderer": "19.3.0",
 		"@typescript-eslint/eslint-plugin": "8.72.0",
 		"@typescript-eslint/parser": "8.72.0",
 		"eslint": "9.39.5",
