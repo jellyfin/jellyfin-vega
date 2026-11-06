@@ -25,7 +25,7 @@
 	"dependencies": {
 		"@amazon-devices/asset-resolver-lib": "1.0.1767254403",
 		"@amazon-devices/react-native-async-storage__async-storage": "2.1.9000000001",
-		"@amazon-devices/react-native-kepler": "4.0.1",
+		"@amazon-devices/react-native-kepler": "4.0.2",
 		"@amazon-devices/webview": "4.0.2",
 		"@jellyfin/sdk": "1.0.2",
 		"react": "19.2.0",
