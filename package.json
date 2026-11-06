@@ -23,7 +23,7 @@
 		"react-native": "0.83.0"
 	},
 	"dependencies": {
-		"@amazon-devices/asset-resolver-lib": "1.0.1767254403",
+		"@amazon-devices/asset-resolver-lib": "1.0.1767254404",
 		"@amazon-devices/react-native-async-storage__async-storage": "2.1.9000000001",
 		"@amazon-devices/react-native-kepler": "4.0.1",
 		"@amazon-devices/webview": "4.0.2",
