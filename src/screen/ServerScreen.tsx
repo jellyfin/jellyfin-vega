@@ -1,5 +1,6 @@
 import { useHideSplashScreenCallback } from '@amazon-devices/react-native-kepler';
 import WebView from '@amazon-devices/webview';
+import { StyleSheet } from 'react-native';
 import { createNativeShell } from '../nativeshell';
 
 interface Props {
@@ -12,6 +13,7 @@ export function ServerScreen({ url, onSelectServer }: Props) {
 
 	return (
 		<WebView
+			style={styles.webview}
 			source={{ uri: url }}
 			hasTVPreferredFocus
 			javaScriptEnabled
@@ -30,3 +32,7 @@ export function ServerScreen({ url, onSelectServer }: Props) {
 		/>
 	);
 }
+
+const styles = StyleSheet.create({
+	webview: { flex: 1, backgroundColor: '#101010' },
+});
