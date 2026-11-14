@@ -18,7 +18,7 @@ Jellyfin for Vega is a Jellyfin client for devices using [Amazon Vega](https://d
 
 ## Develop & build
 
-A working [Amazon Vega SDK](https://developer.amazon.com/docs/vega/0.24/) environment is required, including Node.js and NPM. The project uses NPM scripts for everyday tasks.
+A working [Amazon Vega SDK](https://developer.amazon.com/docs/vega/2.0/) environment is required, including Node.js and NPM. The project uses NPM scripts for everyday tasks.
 
 ### Install dependencies
 
