@@ -1,4 +1,4 @@
-import { useHideSplashScreenCallback } from '@amazon-devices/react-native-kepler';
+import { BackHandler, useHideSplashScreenCallback } from '@amazon-devices/react-native-kepler';
 import WebView from '@amazon-devices/webview';
 import { createNativeShell } from '../nativeshell';
 
@@ -23,6 +23,8 @@ export function ServerScreen({ url, onSelectServer }: Props) {
 			onMessage={({ nativeEvent }) => {
 				if (nativeEvent.data === 'org.jellyfin.vega.selectServer') {
 					onSelectServer();
+				} else if (nativeEvent.data === 'org.jellyfin.vega.exit') {
+					BackHandler.exitApp();
 				}
 			}}
 			mixedContentMode="always"

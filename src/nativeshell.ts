@@ -25,6 +25,7 @@ export function createNativeShell() {
 			getPlugins: () => [],
 			selectServer: () => window.ReactNativeWebView.postMessage('org.jellyfin.vega.selectServer'),
 			AppHost: {
+				exit: () => window.ReactNativeWebView.postMessage('org.jellyfin.vega.exit'),
 				init: async () => {
 					console.log('Initializing Vega OS native shell');
 				},
