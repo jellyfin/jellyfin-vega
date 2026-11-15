@@ -18,7 +18,7 @@ jobs:
       CI: 'true'
       NONINTERACTIVE: 'true'
       SKIP_VVD_INSTALL: 'true'
-      VEGA_SDK_VERSION: '0.24.12112'
+      VEGA_SDK_VERSION: '2.0.13986'
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -31,7 +31,7 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
 
-      # https://developer.amazon.com/docs/vega/0.24/continuous-integration.html
+      # https://developer.amazon.com/docs/vega/2.0/continuous-integration
       - name: Install Vega SDK
         shell: bash
         run: |
