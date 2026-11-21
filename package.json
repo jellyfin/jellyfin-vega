@@ -35,7 +35,7 @@
 	"devDependencies": {
 		"@amazon-devices/eslint-plugin-kepler": "0.1.16",
 		"@amazon-devices/kepler-cli-platform": "0.22.14",
-		"@eslint/js": "9.39.5",
+		"@eslint/js": "10.0.1",
 		"@react-native-community/cli": "20.2.0",
 		"@react-native/babel-preset": "0.83.0",
 		"@react-native/eslint-config": "0.88.1",
@@ -45,7 +45,7 @@
 		"@types/react-test-renderer": "19.3.1",
 		"@typescript-eslint/eslint-plugin": "8.72.2",
 		"@typescript-eslint/parser": "8.72.2",
-		"eslint": "9.39.5",
+		"eslint": "10.15.0",
 		"eslint-plugin-jest": "29.17.0",
 		"jsonc-eslint-parser": "3.3.0",
 		"npm-run-all2": "9.0.4",
